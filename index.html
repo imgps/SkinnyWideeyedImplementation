@@ -18,16 +18,18 @@
     color: rgb(0, 0, 0);
     border-style: none;
     font-weight: bold;
-    height: 40px;
+    height: 30px;
     width: 120px;
     border-radius: 20px;
     cursor: pointer;
     margin-left: 10px;
-    transition: opacity o.15s;
+    transition: opacity 0.15s;
   }
 
   .addtocart-button:hover {
     opacity: 0.7;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+
   }
 
   .buynow-button {
@@ -35,7 +37,7 @@
     color: rgb(0, 0, 0);
     border-style: none;
     font-weight: bold;
-    height: 40px;
+    height: 30px;
     width: 120px;
     border-radius: 20px;
     cursor: pointer;
@@ -46,6 +48,10 @@
   .buynow-button:hover {
     opacity: 0.7;
   }
+
+  .buynow-button:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  }
 </style>
 
 <a class="amazon-link" href="https://amazon.com">
@@ -53,14 +59,26 @@
 </a>
 
 <p class="title">
-  Nike Black Running Shoes
+<h1>
+  Nike Black Running Shoes</h1>
 </p>
 
 <p class="price">
   $39 - In Stock
 </p>
 
-<p> Free delivery tomorrow </p>
+<img
+  src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ae209260-d1a2-41d1-bb9e-4ae639b914a6/pegasus-40-road-running-shoes-0Z9lqN.png"
+  alt="New arrival" width="200" height="200">
+
+<form action="/Not available in your location">
+  <input type="text" placeholder="Check your pincode" required>
+  <button type="submit">Submit</button>
+</form>
+
+<p>
+<h4> Free delivery tomorrow</h4>
+</p>
 <button class="addtocart-button">
   Add to cart
 </button>
